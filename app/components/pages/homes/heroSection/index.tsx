@@ -51,7 +51,7 @@ export const HeroSection = () => {
                   href={element.url}
                   key={index}
                   target="_blanck"
-                  className="hover:text-gray-100 transition-colors"
+                  className="hover:text-gray-400 transition-colors"
                 >
                   {element.icon}
                 </a>
