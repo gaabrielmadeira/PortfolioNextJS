@@ -1,6 +1,7 @@
 import { cn } from '@/app/lib/util'
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
+import { DiCode } from 'react-icons/di'
 
 type NavItensProps = {
   label: string
@@ -16,11 +17,13 @@ export const NavItem = ({ label, href }: NavItensProps) => {
     <Link
       href={href}
       className={cn(
-        'text-gray-400 flex items-center gap-2 font-medium font-mono',
-        isActive && 'text-gray-50',
+        'text-gray-500 flex items-center gap-2 font-medium font-mono',
+        isActive && 'text-gray-300',
       )}
     >
-      <span className="text-emerald-400">#</span>
+      <span className="text-orange-600">
+        <DiCode size={30} color="#dd6b20" />
+      </span>
       {label}
     </Link>
   )
