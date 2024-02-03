@@ -20,12 +20,12 @@ export const Header = () => {
     <header className="absolute top-0 w-full z-10 h-24 flex items-center justify-center">
       <div className="container flex justify-between">
         <Link href="/">
-          {/* <Image
+          <Image
             width={120}
             height={100}
-            src="/images/GMlogo.png"
+            src="/images/logoGM.png"
             alt="Logo GM dev"
-          /> */}
+          />
         </Link>
         <nav className="flex items-center gap-4 sm:gap-10">
           {NAV_ITENS.map((item) => (

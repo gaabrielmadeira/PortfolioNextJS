@@ -63,7 +63,7 @@ export const HeroSection = () => {
         <Image
           width={430}
           height={450}
-          src="/images/profile-photo.png"
+          src="/images/profile.png"
           alt="Foto de perfil do Gabriel Madeira"
           className="w-[300px] h-[300px] lg:w-[400px] lg:h-[404px] mb-6 lg:mb-0 object-contain"
         />
