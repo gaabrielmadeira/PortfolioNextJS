@@ -13,6 +13,9 @@ module.exports = {
       fontFamily: {
         mono: ['var(--font-plex-mono)', 'monospace'],
       },
+      backgroundImage: {
+        'hero-image': "url('/images/background.png')",
+      },
       boxShadow: {
         button: '0px 0px 68px 7px rgba(246, 153, 63, 0.9)',
       },
