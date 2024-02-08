@@ -18,13 +18,17 @@ export const NavItem = ({ label, href }: NavItensProps) => {
       href={href}
       className={cn(
         'text-gray-500 flex items-center gap-2 font-medium font-mono',
-        isActive && 'text-gray-400',
+        isActive && 'text-orange-600',
       )}
     >
       <span className="text-orange-600">
         <DiCode size={30} color="#dd6b20" />
       </span>
-      {label}
+      <span
+        className={cn(isActive && 'border-b border-solid border-orange-600')}
+      >
+        {label}
+      </span>
     </Link>
   )
 }
