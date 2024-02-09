@@ -4,6 +4,7 @@ import { ReactNode } from 'react'
 import { Header } from './components/header'
 import { ContactSection } from './components/contactSection'
 import { Footer } from './components/footer'
+import { BackToTop } from './components/backToTop'
 
 const inter = Inter({
   variable: '--font-inter',
@@ -25,6 +26,7 @@ export default function RootLayout({ children }: { children: ReactNode }) {
         <ContactSection />
         <Footer />
       </body>
+      <BackToTop />
     </html>
   )
 }

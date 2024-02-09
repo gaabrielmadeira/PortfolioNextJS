@@ -7,10 +7,10 @@ export const Button = ({ children, className, ...props }: ButtonProps) => {
   return (
     <button
       className={cn(
-        'min-w-[190px] bg-orange-600 py-3 px-4 rounded-lg text-gray-50 flex items-center justify-center gap-2 hover:bg-orange-400 transition-all disabled:opacity-50',
+        'bg-orange-600 py-3 px-4 rounded-lg text-gray-50 flex justify-center items-center gap-2 hover:bg-orange-500 transition-all disabled:opacity-50',
         className,
-        { ...props },
       )}
+      {...props}
     >
       {children}
     </button>

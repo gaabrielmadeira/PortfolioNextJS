@@ -5,7 +5,7 @@
 @layer base {
   body {
     background-color: #010b17;
-    @apply text-gray-100
+    @apply text-gray-100 font-sans
   }
 }
 

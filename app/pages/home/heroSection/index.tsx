@@ -1,8 +1,7 @@
-import { Button } from '@/app/components/button'
 import { TechBadge } from '@/app/components/techBagde'
 import Image from 'next/image'
-import { HiArrowNarrowRight } from 'react-icons/hi'
 import { TbBrandGithub, TbBrandLinkedin, TbBrandWhatsapp } from 'react-icons/tb'
+import { ContactButton } from './contactButton'
 
 const MOCK_ICONS = [
   {
@@ -25,7 +24,9 @@ export const HeroSection = () => {
       <div className="container flex items-start justify-between flex-col-reverse lg:flex-row">
         <div className="w-full lg:max-w-[530px]">
           <p className="font-mono text-orange-600">Olá, Meu nome é</p>
-          <h2 className="text-4xl font-medium mt-2">Gabriel Madeira</h2>
+          <h2 className="text-4xl font-medium font-mono mt-2">
+            Gabriel Madeira
+          </h2>
 
           <p className="text-gray-500 my-6 text-sm sm:text-base">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
@@ -41,10 +42,7 @@ export const HeroSection = () => {
           </div>
 
           <div className="mt-6 lg:mt-10 flex sm:items-center sm:gap-5 flex-col sm:flex-row">
-            <Button className="w-max shadow-button">
-              Entre em contato
-              <HiArrowNarrowRight size={18} />
-            </Button>
+            <ContactButton />
             <div className="text-2xl text-gray-600 flex items-center h-20 gap-3">
               {MOCK_ICONS.map((element, index) => (
                 <a
