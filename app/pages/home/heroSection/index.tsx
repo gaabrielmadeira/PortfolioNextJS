@@ -2,6 +2,7 @@ import { TechBadge } from '@/app/components/techBagde'
 import Image from 'next/image'
 import { TbBrandGithub, TbBrandLinkedin, TbBrandWhatsapp } from 'react-icons/tb'
 import { ContactButton } from './contactButton'
+import { IoDocumentText } from 'react-icons/io5'
 
 const MOCK_ICONS = [
   {
@@ -13,8 +14,45 @@ const MOCK_ICONS = [
     icon: <TbBrandLinkedin />,
   },
   {
-    url: '',
+    url: 'https://wa.me/53997090585',
     icon: <TbBrandWhatsapp />,
+  },
+  {
+    url: 'https://drive.google.com/file/d/1c0VodbyHyKEWh7j5HetUKtiGlAuuiLEw/view?usp=drive_link',
+    icon: <IoDocumentText />,
+  },
+]
+
+const MOCK_TECHS = [
+  {
+    name: 'Html',
+  },
+  {
+    name: 'CSS',
+  },
+  {
+    name: 'TypeScript',
+  },
+  {
+    name: 'React.js',
+  },
+  {
+    name: 'Next.js',
+  },
+  {
+    name: 'Styled Components',
+  },
+  {
+    name: 'Tailwind.CSS',
+  },
+  {
+    name: 'Express.js',
+  },
+  {
+    name: 'PostgreSQL',
+  },
+  {
+    name: 'Docker',
   },
 ]
 
@@ -29,15 +67,19 @@ export const HeroSection = () => {
           </h2>
 
           <p className="text-gray-500 my-6 text-sm sm:text-base">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
-            accumsan urna vitae est molestie bibendum. Vivamus nec tortor
-            fermentum, scelerisque mi non, bibendum nisi. Duis quis dictum
-            dolor. Integer laoreet semper blandit. at.
+            Olá! Meu nome é <strong>Gabriel Madeira</strong> sou um
+            desenvolvedor web com foco no desenvolvimento tanto Front End,
+            quanto em Back End. Adoro criar interfaces de usuários bonitas e
+            funcionais, assim como criar APIs para facilitar a integração entre
+            sistemas e dar vida a aplicações incriveis. Busco fazer a diferença
+            no mercado com as minhas habilidades e qualidades, acredito que o
+            conhecimento tenha que ser posto em prática no dia a dia para
+            melhorar a vida das pessoas.
           </p>
 
           <div className="flex flex-wrap gap-x-2 gap-y-3 lg:max-w-[340px]:">
-            {Array.from({ length: 5 }).map((_, index) => (
-              <TechBadge name="Next js" key={index} />
+            {MOCK_TECHS.map((element, index) => (
+              <TechBadge name={element.name} key={index} />
             ))}
           </div>
 

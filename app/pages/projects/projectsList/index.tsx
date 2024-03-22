@@ -7,19 +7,19 @@ export const ProjectList = () => {
       <Link href="/projects/connectHub">
         <ProjectCard />
       </Link>
-      <Link href="/projects/connectHub">
+      <Link href="/projects/kenziemovies">
         <ProjectCard />
       </Link>
-      <Link href="/projects/connectHub">
+      <Link href="/projects/kenzieburguer">
         <ProjectCard />
       </Link>
-      <Link href="/projects/connectHub">
+      <Link href="/projects/apiimobiliaria">
         <ProjectCard />
       </Link>
-      <Link href="/projects/connectHub">
+      <Link href="/projects/financecontrol">
         <ProjectCard />
       </Link>
-      <Link href="/projects/connectHub">
+      <Link href="/projects/kenziehub">
         <ProjectCard />
       </Link>
     </ul>
